@@ -156,7 +156,7 @@
             <!--Box-->
             <div class="full-slider-box f-slide-1">
                 <!--Slider Tect Container-->
-                <div class="fslider-text-container">
+                <div class="slider-text-container">
         
                     <div class="f-slider-text">
                     <span>Limited Offer</span>
@@ -172,7 +172,7 @@
             <!--Box-->
             <div class="full-slider-box f-slide-2">
                 <!--Slider Tect Container-->
-                <div class="f-slider-text-container">
+                <div class="slider-text-container">
         
                     <div class="f-slider-text">
                     <span>Limited Offer</span>
@@ -188,7 +188,7 @@
             <!--Box-->
             <div class="full-slider-box f-slide-3">
                 <!--Slider Tect Container-->
-                <div class="f-slider-text-container">
+                <div class="slider-text-container">
         
                     <div class="f-slider-text">
                     <span>Limited Offer</span>
@@ -201,6 +201,68 @@
       </ul>
 
 
+      <div class="feature-heading">
+          <h2>Featured Categories</h2>
+      </div>
+
+      <!--product-categories-slider---------------------->
+      <ul id="autoWidth" class="container" class="cs-hidden">
+        <!--box-1--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="images/feature_1.jpg">
+                </a>
+            </div>
+            <span>T-Shirts</span>
+        </li>
+        <!--box-2--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="images/feature_2.jpg">
+                </a>
+            </div>
+            <span>Men T-Shirts</span>
+        </li>
+        <!--box-3--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="images/feature_3.jpg">
+                </a>
+            </div>
+            <span>Kids T-Shirts</span>
+        </li>
+        <!--box-4--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="images/feature_4.jpg">
+                </a>
+            </div>
+            <span>Pillow</span>
+        </li>
+        <!--box-5--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="images/feature_5.jpg">
+                </a>
+            </div>
+            <span>Phone Cover</span>
+        </li>
+        <!--box-6--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="images/feature_6.jpg">
+                </a>
+            </div>
+            <span>Shopping Bags</span>
+        </li>
+        
+      </ul>
 
     <!--JQuery-->
     <script src="JS/JQuery.js"></script>
@@ -243,6 +305,18 @@
                 loop:true
             });
         });
+
+
+          /*--For-Product-SLider----------------*/
+    $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
     </script>
 </body>
 
