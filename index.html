@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--stylesheet-->
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <!--light-slider-css-->
+    <link rel="stylesheet" type="text/css" href="CSS/lightslider.css">
+
+    <!--JQuery-->
+    <script src="JS/JQuery.js"></script>
+
+    <!--LightSlider-->
+    <script src="JS/lightslider.js"></script>
+
     <title>Ecommerce Website</title>
 
     <!--using font-awesome For Icons-->
@@ -138,6 +148,59 @@
         </div>
     </div>
 
+    <!--Full-Slider-->
+
+    <ul id="adaptive" class="cs-hidden">
+        <!--Box-1-->
+        <li class="item-a">
+            <!--Box-->
+            <div class="full-slider-box f-slide-1">
+                <!--Slider Tect Container-->
+                <div class="fslider-text-container">
+        
+                    <div class="f-slider-text">
+                    <span>Limited Offer</span>
+                    <strong>30% off<br/> with <font>promocode</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div> 
+        </li>
+
+        <!--Box-2-->
+        <li class="item-a">
+            <!--Box-->
+            <div class="full-slider-box f-slide-2">
+                <!--Slider Tect Container-->
+                <div class="f-slider-text-container">
+        
+                    <div class="f-slider-text">
+                    <span>Limited Offer</span>
+                    <strong>30% off<br/> with <font>promocode</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div> 
+        </li>
+
+        <!--Box-3-->
+        <li class="item-a">
+            <!--Box-->
+            <div class="full-slider-box f-slide-3">
+                <!--Slider Tect Container-->
+                <div class="f-slider-text-container">
+        
+                    <div class="f-slider-text">
+                    <span>Limited Offer</span>
+                    <strong>30% off<br/> with <font>promocode</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div> 
+        </li>
+      </ul>
+
+
 
     <!--JQuery-->
     <script src="JS/JQuery.js"></script>
@@ -171,7 +234,15 @@
             $('.form').removeClass('login-active').removeClass('sign-up-active')
         });
 
-
+        /*--full-Slider-Script--*/
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight:true,
+                item:1,
+                slideMargin:0,
+                loop:true
+            });
+        });
     </script>
 </body>
 
